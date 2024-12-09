@@ -160,8 +160,8 @@ To run similar experiments on the other model variants mentioned in Table 2 of t
 * [G-VGAE](https://github.com/deezer/gravity_graph_autoencoders);
 * [MA-VGAE](https://github.com/GuillaumeSalhaGalvan/modularity_aware_gae).
 
+More complete implementations for these variants will be made available by the publication date of the article, along with Python commands with all optimal hyperparameters for these variants.
+
 ## Citation
 
 To be added.
-
-More complete implementations for these variants will be made available by the publication date of the article, along with Python commands with all optimal hyperparameters for these variants.
