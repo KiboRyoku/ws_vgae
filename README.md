@@ -27,7 +27,7 @@ cd ws_vgae
 python setup.py install
 ```
 
-Requirements: python 3.10, networkx 2.6, numpy 2.0.2, scikit-learn 1.5.2, scipy 1.14.1, tensorflow 2.18.
+Requirements: Python 3.10, networkx 2.6, numpy 2.0.2, scikit-learn 1.5.2, scipy 1.14.1, tensorflow 2.18.
 
 
 ## Datasets
@@ -159,5 +159,9 @@ To run similar experiments on the other model variants mentioned in Table 2 of t
 * [Graphite-VGAE](https://github.com/ermongroup/graphite);
 * [G-VGAE](https://github.com/deezer/gravity_graph_autoencoders);
 * [MA-VGAE](https://github.com/GuillaumeSalhaGalvan/modularity_aware_gae).
+
+## Citation
+
+To be added.
 
 More complete implementations for these variants will be made available by the publication date of the article, along with Python commands with all optimal hyperparameters for these variants.
