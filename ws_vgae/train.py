@@ -135,8 +135,6 @@ for i in range(FLAGS.nb_run):
         t_proba = time.time()
         # Node-level p_i degree-based, core-based, or uniform distribution
         node_distribution = get_distribution(FLAGS.measure, FLAGS.alpha, adj)
-        # Running time to compute distribution
-        mean_time_proba_computation.append(time.time() - t_proba)
         # Node sampling
         sampled_nodes, adj_label, adj_sampled_sparse = node_sampling(adj, node_distribution,
                                                        FLAGS.nb_node_samples, FLAGS.replace)
