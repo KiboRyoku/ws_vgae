@@ -1,6 +1,6 @@
 # Investigating Weight Sharing in VGAE
 
-This repository contains Python code and data for reproducing the experiments described in the research article titled _"To Share or Not to Share: Investigating Weight Sharing in Variational Graph Autoencoders"_ by Guillaume Salha-Galvan and Jiaying Xu. This article has been accepted for presentation at the 2025 ACM Web Conference ([WWW 2025](https://www2025.thewebconf.org/)) and will be available online soon.
+This repository contains Python code and data for reproducing the experiments described in the research article titled _"To Share or Not to Share: Investigating Weight Sharing in Variational Graph Autoencoders"_ by G. Salha-Galvan and J. Xu. This article has been accepted for presentation at the 2025 ACM Web Conference ([WWW 2025](https://www2025.thewebconf.org/)) and will be available online soon.
 
 ## Introduction
 
