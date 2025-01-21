@@ -53,6 +53,13 @@ def load_data(dataset):
     elif dataset == 'arxiv-hep':
         adj = nx.adjacency_matrix(nx.read_edgelist("../data/arxiv-hep.txt", delimiter='\t'))
         features = sp.identity(adj.shape[0])
+    
+    elif dataset == 'artists':
+        adj = nx.adjacency_matrix(nx.read_weighted_edgelist("../data/deezer_graph.csv",
+                                                           delimiter=',',
+                                                           nodetype =float))
+        adj = adj - sp.eye(adj.shape[0])
+        features = sp.identity(adj.shape[0])
 
     elif dataset in ('cora', 'citeseer', 'pubmed'):
         # Load the data: x, tx, allx, graph
@@ -95,7 +102,11 @@ def load_label(dataset):
 
     elif dataset == 'blogs':
         labels = np.loadtxt("../data/blogs-cluster", delimiter = ' ', dtype = str)
-
+        
+    elif dataset == 'artists':
+        labels = np.genfromtxt("../data/deezer_features.csv", delimiter=",")[:,33:53]
+        labels = [np.nonzero(row)[0][0] for row in labels]
+        
     elif dataset in ('cora', 'citeseer', 'pubmed'):
         names = ['ty', 'ally']
         objects = []

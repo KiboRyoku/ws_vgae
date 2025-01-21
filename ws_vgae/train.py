@@ -28,6 +28,8 @@ flags.DEFINE_string('dataset', 'cora', 'Name of the graph dataset')
 - cora-large
 - sbm
 - hamster
+- arxiv-hep
+- artists
 '''
 
 # Select downstream task to evaluate the model
