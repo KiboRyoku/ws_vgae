@@ -173,5 +173,5 @@ Please cite our paper if you use this code in your own work:
   title={To Share or Not to Share: Investigating Weight Sharing in Variational Graph Autoencoders},
   author={Salha-Galvan, Guillaume and Xu, Jiaying},
   booktitle={Companion Proceedings of the 2025 ACM Web Conference},
-  year={2019}
+  year={2025}
 }
