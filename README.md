@@ -1,6 +1,6 @@
 # Investigating Weight Sharing in VGAE
 
-This repository contains Python code and data for reproducing the experiments described in the research article titled _"To Share or Not to Share: Investigating Weight Sharing in Variational Graph Autoencoders"_ by G. Salha-Galvan and J. Xu. This article is currently under review and will be made available online upon publication.
+This repository contains Python code and data for reproducing the experiments described in the research article titled _"To Share or Not to Share: Investigating Weight Sharing in Variational Graph Autoencoders"_ by Guillaume Salha-Galvan and Jiaying Xu. This article has been accepted for presentation at the 2025 ACM Web Conference ([WWW 2025](https://www2025.thewebconf.org/)) and will be available online soon.
 
 ## Introduction
 
@@ -83,6 +83,7 @@ python train.py --model=gcn_vae --dataset=cora-large --task=link_prediction --fe
 python train.py --model=gcn_vae --dataset=google-medium --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 python train.py --model=gcn_vae --dataset=google --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1 --fastgae --nb_node_samples=5000 --alpha=1
 python train.py --model=gcn_vae --dataset=sbm --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
+python train.py --model=gcn_vae --dataset=artists --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 ```
 
 Train complete **VGAE** models **without WS** on all graph datasets:
@@ -103,6 +104,7 @@ python train.py --model=gcn_vae_nows --dataset=cora-large --task=link_prediction
 python train.py --model=gcn_vae_nows --dataset=google-medium --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 python train.py --model=gcn_vae_nows --dataset=google --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1 --fastgae --nb_node_samples=5000 --alpha=1
 python train.py --model=gcn_vae_nows --dataset=sbm --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
+python train.py --model=gcn_vae_nows --dataset=artists --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 ```
 
 Train complete **Deep VGAE** models **with WS** on all graph datasets:
@@ -122,6 +124,7 @@ python train.py --model=deep_gcn_vae --dataset=cora-large --task=link_prediction
 python train.py --model=deep_gcn_vae --dataset=google-medium --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 python train.py --model=deep_gcn_vae --dataset=google --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 python train.py --model=deep_gcn_vae --dataset=sbm --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
+python train.py --model=deep_gcn_vae --dataset=artists --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 ```
 
 Train complete **Deep VGAE** models **without WS** on all graph datasets:
@@ -141,6 +144,7 @@ python train.py --model=deep_gcn_vae_nows --dataset=cora-large --task=link_predi
 python train.py --model=deep_gcn_vae_nows --dataset=google-medium --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 python train.py --model=deep_gcn_vae_nows --dataset=google --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 python train.py --model=deep_gcn_vae_nows --dataset=sbm --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
+python train.py --model=deep_gcn_vae_nows --dataset=artists --task=link_prediction --features=False  --learning_rate=0.01 --iterations=300 --nb_run=1  --fastgae --nb_node_samples=5000 --alpha=1
 ```
 
 ### Notes:
@@ -160,8 +164,14 @@ To run similar experiments on the other model variants mentioned in Table 2 of t
 * [G-VGAE](https://github.com/deezer/gravity_graph_autoencoders);
 * [MA-VGAE](https://github.com/GuillaumeSalhaGalvan/modularity_aware_gae).
 
-More complete implementations for these variants will be made available by the publication date of the article, along with Python commands with all optimal hyperparameters for these variants.
-
 ## Citation
 
-To be added.
+Please cite our paper if you use this code in your own work:
+
+```BibTeX
+@inproceedings{salhagalvan2025toshare,
+  title={To Share or Not to Share: Investigating Weight Sharing in Variational Graph Autoencoders},
+  author={Salha-Galvan, Guillaume and Xu, Jiaying},
+  booktitle={Companion Proceedings of the 2025 ACM Web Conference},
+  year={2019}
+}
